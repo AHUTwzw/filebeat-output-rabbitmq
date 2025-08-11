@@ -4,7 +4,7 @@ ENV PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/go/bin
 
 WORKDIR /usr/share/filebeat
 
-COPY ./filebeat.exe /usr/share/filebeat/filebeat
+COPY build/filebeat /usr/share/filebeat/filebeat
 
 ENTRYPOINT ["./filebeat"]
 
